@@ -1,0 +1,1732 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.21.1217.2252                               -->
+<workbook original-version='18.1' source-build='2021.4.2 (20214.21.1217.2252)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='lol_games_to_pivot' inline='true' name='federated.03m22va16zbsgx13lw0i009pa1o3' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='lol_games_to_pivot' name='textscan.0klg3171fvmms710k4dlk0ko9uqi'>
+            <connection class='textscan' directory='E:/MISC/Supsi/data_vis/datavis_project/data/finite' filename='lol_games_to_pivot.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='string' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[T1 Champ1Id]' />
+            <value name='[T1 Champ2Id]' />
+            <value name='[T1 Champ3Id]' />
+            <value name='[T1 Champ4Id]' />
+            <value name='[T1 Champ5Id]' />
+            <value name='[T2 Champ1Id]' />
+            <value name='[T2 Champ2Id]' />
+            <value name='[T2 Champ3Id]' />
+            <value name='[T2 Champ4Id]' />
+            <value name='[T2 Champ5Id]' />
+            <value name='[T1 Ban1]' />
+            <value name='[T1 Ban2]' />
+            <value name='[T1 Ban3]' />
+            <value name='[T1 Ban4]' />
+            <value name='[T1 Ban5]' />
+            <value name='[T2 Ban1]' />
+            <value name='[T2 Ban2]' />
+            <value name='[T2 Ban3]' />
+            <value name='[T2 Ban4]' />
+            <value name='[T2 Ban5]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[lol_games_to_pivot.csv].[t1_champ1id]' />
+              <field name='[lol_games_to_pivot.csv].[t1_champ2id]' />
+              <field name='[lol_games_to_pivot.csv].[t1_champ3id]' />
+              <field name='[lol_games_to_pivot.csv].[t1_champ4id]' />
+              <field name='[lol_games_to_pivot.csv].[t1_champ5id]' />
+              <field name='[lol_games_to_pivot.csv].[t2_champ1id]' />
+              <field name='[lol_games_to_pivot.csv].[t2_champ2id]' />
+              <field name='[lol_games_to_pivot.csv].[t2_champ3id]' />
+              <field name='[lol_games_to_pivot.csv].[t2_champ4id]' />
+              <field name='[lol_games_to_pivot.csv].[t2_champ5id]' />
+              <field name='[lol_games_to_pivot.csv].[t1_ban1]' />
+              <field name='[lol_games_to_pivot.csv].[t1_ban2]' />
+              <field name='[lol_games_to_pivot.csv].[t1_ban3]' />
+              <field name='[lol_games_to_pivot.csv].[t1_ban4]' />
+              <field name='[lol_games_to_pivot.csv].[t1_ban5]' />
+              <field name='[lol_games_to_pivot.csv].[t2_ban1]' />
+              <field name='[lol_games_to_pivot.csv].[t2_ban2]' />
+              <field name='[lol_games_to_pivot.csv].[t2_ban3]' />
+              <field name='[lol_games_to_pivot.csv].[t2_ban4]' />
+              <field name='[lol_games_to_pivot.csv].[t2_ban5]' />
+            </group>
+          </groups>
+          <relation connection='textscan.0klg3171fvmms710k4dlk0ko9uqi' name='lol_games_to_pivot.csv' table='[lol_games_to_pivot#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='integer' name='gameId' ordinal='1' />
+              <column datatype='integer' name='creationTime' ordinal='2' />
+              <column datatype='integer' name='gameDuration' ordinal='3' />
+              <column datatype='integer' name='seasonId' ordinal='4' />
+              <column datatype='integer' name='winner' ordinal='5' />
+              <column datatype='integer' name='firstBlood' ordinal='6' />
+              <column datatype='integer' name='firstTower' ordinal='7' />
+              <column datatype='integer' name='firstInhibitor' ordinal='8' />
+              <column datatype='integer' name='firstBaron' ordinal='9' />
+              <column datatype='integer' name='firstDragon' ordinal='10' />
+              <column datatype='integer' name='firstRiftHerald' ordinal='11' />
+              <column datatype='string' name='t1_champ1id' ordinal='12' />
+              <column datatype='integer' name='t1_champ1_sum1' ordinal='13' />
+              <column datatype='integer' name='t1_champ1_sum2' ordinal='14' />
+              <column datatype='string' name='t1_champ2id' ordinal='15' />
+              <column datatype='integer' name='t1_champ2_sum1' ordinal='16' />
+              <column datatype='integer' name='t1_champ2_sum2' ordinal='17' />
+              <column datatype='string' name='t1_champ3id' ordinal='18' />
+              <column datatype='integer' name='t1_champ3_sum1' ordinal='19' />
+              <column datatype='integer' name='t1_champ3_sum2' ordinal='20' />
+              <column datatype='string' name='t1_champ4id' ordinal='21' />
+              <column datatype='integer' name='t1_champ4_sum1' ordinal='22' />
+              <column datatype='integer' name='t1_champ4_sum2' ordinal='23' />
+              <column datatype='string' name='t1_champ5id' ordinal='24' />
+              <column datatype='integer' name='t1_champ5_sum1' ordinal='25' />
+              <column datatype='integer' name='t1_champ5_sum2' ordinal='26' />
+              <column datatype='integer' name='t1_towerKills' ordinal='27' />
+              <column datatype='integer' name='t1_inhibitorKills' ordinal='28' />
+              <column datatype='integer' name='t1_baronKills' ordinal='29' />
+              <column datatype='integer' name='t1_dragonKills' ordinal='30' />
+              <column datatype='integer' name='t1_riftHeraldKills' ordinal='31' />
+              <column datatype='integer' name='t1_ban1' ordinal='32' />
+              <column datatype='integer' name='t1_ban2' ordinal='33' />
+              <column datatype='integer' name='t1_ban3' ordinal='34' />
+              <column datatype='integer' name='t1_ban4' ordinal='35' />
+              <column datatype='integer' name='t1_ban5' ordinal='36' />
+              <column datatype='string' name='t2_champ1id' ordinal='37' />
+              <column datatype='integer' name='t2_champ1_sum1' ordinal='38' />
+              <column datatype='integer' name='t2_champ1_sum2' ordinal='39' />
+              <column datatype='string' name='t2_champ2id' ordinal='40' />
+              <column datatype='integer' name='t2_champ2_sum1' ordinal='41' />
+              <column datatype='integer' name='t2_champ2_sum2' ordinal='42' />
+              <column datatype='string' name='t2_champ3id' ordinal='43' />
+              <column datatype='integer' name='t2_champ3_sum1' ordinal='44' />
+              <column datatype='integer' name='t2_champ3_sum2' ordinal='45' />
+              <column datatype='string' name='t2_champ4id' ordinal='46' />
+              <column datatype='integer' name='t2_champ4_sum1' ordinal='47' />
+              <column datatype='integer' name='t2_champ4_sum2' ordinal='48' />
+              <column datatype='string' name='t2_champ5id' ordinal='49' />
+              <column datatype='integer' name='t2_champ5_sum1' ordinal='50' />
+              <column datatype='integer' name='t2_champ5_sum2' ordinal='51' />
+              <column datatype='integer' name='t2_towerKills' ordinal='52' />
+              <column datatype='integer' name='t2_inhibitorKills' ordinal='53' />
+              <column datatype='integer' name='t2_baronKills' ordinal='54' />
+              <column datatype='integer' name='t2_dragonKills' ordinal='55' />
+              <column datatype='integer' name='t2_riftHeraldKills' ordinal='56' />
+              <column datatype='integer' name='t2_ban1' ordinal='57' />
+              <column datatype='integer' name='t2_ban2' ordinal='58' />
+              <column datatype='integer' name='t2_ban3' ordinal='59' />
+              <column datatype='integer' name='t2_ban4' ordinal='60' />
+              <column datatype='integer' name='t2_ban5' ordinal='61' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Pivot' type='pivot'>
+          <columns>
+            <column datatype='string' name='Pivot Field Names' />
+            <column datatype='string' name='Pivot Field Values' />
+          </columns>
+          <tag name='Pivot Field Names'>
+            <value name='[T1 Champ1Id]' />
+            <value name='[T1 Champ2Id]' />
+            <value name='[T1 Champ3Id]' />
+            <value name='[T1 Champ4Id]' />
+            <value name='[T1 Champ5Id]' />
+            <value name='[T2 Champ1Id]' />
+            <value name='[T2 Champ2Id]' />
+            <value name='[T2 Champ3Id]' />
+            <value name='[T2 Champ4Id]' />
+            <value name='[T2 Champ5Id]' />
+            <value name='[T1 Ban1]' />
+            <value name='[T1 Ban2]' />
+            <value name='[T1 Ban3]' />
+            <value name='[T1 Ban4]' />
+            <value name='[T1 Ban5]' />
+            <value name='[T2 Ban1]' />
+            <value name='[T2 Ban2]' />
+            <value name='[T2 Ban3]' />
+            <value name='[T2 Ban4]' />
+            <value name='[T2 Ban5]' />
+          </tag>
+          <groups>
+            <group name='Pivot Field Values'>
+              <field name='[lol_games_to_pivot.csv].[t1_champ1id]' />
+              <field name='[lol_games_to_pivot.csv].[t1_champ2id]' />
+              <field name='[lol_games_to_pivot.csv].[t1_champ3id]' />
+              <field name='[lol_games_to_pivot.csv].[t1_champ4id]' />
+              <field name='[lol_games_to_pivot.csv].[t1_champ5id]' />
+              <field name='[lol_games_to_pivot.csv].[t2_champ1id]' />
+              <field name='[lol_games_to_pivot.csv].[t2_champ2id]' />
+              <field name='[lol_games_to_pivot.csv].[t2_champ3id]' />
+              <field name='[lol_games_to_pivot.csv].[t2_champ4id]' />
+              <field name='[lol_games_to_pivot.csv].[t2_champ5id]' />
+              <field name='[lol_games_to_pivot.csv].[t1_ban1]' />
+              <field name='[lol_games_to_pivot.csv].[t1_ban2]' />
+              <field name='[lol_games_to_pivot.csv].[t1_ban3]' />
+              <field name='[lol_games_to_pivot.csv].[t1_ban4]' />
+              <field name='[lol_games_to_pivot.csv].[t1_ban5]' />
+              <field name='[lol_games_to_pivot.csv].[t2_ban1]' />
+              <field name='[lol_games_to_pivot.csv].[t2_ban2]' />
+              <field name='[lol_games_to_pivot.csv].[t2_ban3]' />
+              <field name='[lol_games_to_pivot.csv].[t2_ban4]' />
+              <field name='[lol_games_to_pivot.csv].[t2_ban5]' />
+            </group>
+          </groups>
+          <relation connection='textscan.0klg3171fvmms710k4dlk0ko9uqi' name='lol_games_to_pivot.csv' table='[lol_games_to_pivot#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='integer' name='gameId' ordinal='1' />
+              <column datatype='integer' name='creationTime' ordinal='2' />
+              <column datatype='integer' name='gameDuration' ordinal='3' />
+              <column datatype='integer' name='seasonId' ordinal='4' />
+              <column datatype='integer' name='winner' ordinal='5' />
+              <column datatype='integer' name='firstBlood' ordinal='6' />
+              <column datatype='integer' name='firstTower' ordinal='7' />
+              <column datatype='integer' name='firstInhibitor' ordinal='8' />
+              <column datatype='integer' name='firstBaron' ordinal='9' />
+              <column datatype='integer' name='firstDragon' ordinal='10' />
+              <column datatype='integer' name='firstRiftHerald' ordinal='11' />
+              <column datatype='string' name='t1_champ1id' ordinal='12' />
+              <column datatype='integer' name='t1_champ1_sum1' ordinal='13' />
+              <column datatype='integer' name='t1_champ1_sum2' ordinal='14' />
+              <column datatype='string' name='t1_champ2id' ordinal='15' />
+              <column datatype='integer' name='t1_champ2_sum1' ordinal='16' />
+              <column datatype='integer' name='t1_champ2_sum2' ordinal='17' />
+              <column datatype='string' name='t1_champ3id' ordinal='18' />
+              <column datatype='integer' name='t1_champ3_sum1' ordinal='19' />
+              <column datatype='integer' name='t1_champ3_sum2' ordinal='20' />
+              <column datatype='string' name='t1_champ4id' ordinal='21' />
+              <column datatype='integer' name='t1_champ4_sum1' ordinal='22' />
+              <column datatype='integer' name='t1_champ4_sum2' ordinal='23' />
+              <column datatype='string' name='t1_champ5id' ordinal='24' />
+              <column datatype='integer' name='t1_champ5_sum1' ordinal='25' />
+              <column datatype='integer' name='t1_champ5_sum2' ordinal='26' />
+              <column datatype='integer' name='t1_towerKills' ordinal='27' />
+              <column datatype='integer' name='t1_inhibitorKills' ordinal='28' />
+              <column datatype='integer' name='t1_baronKills' ordinal='29' />
+              <column datatype='integer' name='t1_dragonKills' ordinal='30' />
+              <column datatype='integer' name='t1_riftHeraldKills' ordinal='31' />
+              <column datatype='integer' name='t1_ban1' ordinal='32' />
+              <column datatype='integer' name='t1_ban2' ordinal='33' />
+              <column datatype='integer' name='t1_ban3' ordinal='34' />
+              <column datatype='integer' name='t1_ban4' ordinal='35' />
+              <column datatype='integer' name='t1_ban5' ordinal='36' />
+              <column datatype='string' name='t2_champ1id' ordinal='37' />
+              <column datatype='integer' name='t2_champ1_sum1' ordinal='38' />
+              <column datatype='integer' name='t2_champ1_sum2' ordinal='39' />
+              <column datatype='string' name='t2_champ2id' ordinal='40' />
+              <column datatype='integer' name='t2_champ2_sum1' ordinal='41' />
+              <column datatype='integer' name='t2_champ2_sum2' ordinal='42' />
+              <column datatype='string' name='t2_champ3id' ordinal='43' />
+              <column datatype='integer' name='t2_champ3_sum1' ordinal='44' />
+              <column datatype='integer' name='t2_champ3_sum2' ordinal='45' />
+              <column datatype='string' name='t2_champ4id' ordinal='46' />
+              <column datatype='integer' name='t2_champ4_sum1' ordinal='47' />
+              <column datatype='integer' name='t2_champ4_sum2' ordinal='48' />
+              <column datatype='string' name='t2_champ5id' ordinal='49' />
+              <column datatype='integer' name='t2_champ5_sum1' ordinal='50' />
+              <column datatype='integer' name='t2_champ5_sum2' ordinal='51' />
+              <column datatype='integer' name='t2_towerKills' ordinal='52' />
+              <column datatype='integer' name='t2_inhibitorKills' ordinal='53' />
+              <column datatype='integer' name='t2_baronKills' ordinal='54' />
+              <column datatype='integer' name='t2_dragonKills' ordinal='55' />
+              <column datatype='integer' name='t2_riftHeraldKills' ordinal='56' />
+              <column datatype='integer' name='t2_ban1' ordinal='57' />
+              <column datatype='integer' name='t2_ban2' ordinal='58' />
+              <column datatype='integer' name='t2_ban3' ordinal='59' />
+              <column datatype='integer' name='t2_ban4' ordinal='60' />
+              <column datatype='integer' name='t2_ban5' ordinal='61' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gameId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[gameId]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>gameId</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>creationTime</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[creationTime]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>creationTime</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gameDuration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[gameDuration]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>gameDuration</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>seasonId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[seasonId]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>seasonId</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winner</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[winner]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>winner</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>firstBlood</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[firstBlood]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>firstBlood</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>firstTower</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[firstTower]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>firstTower</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>firstInhibitor</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[firstInhibitor]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>firstInhibitor</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>firstBaron</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[firstBaron]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>firstBaron</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>firstDragon</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[firstDragon]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>firstDragon</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>firstRiftHerald</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[firstRiftHerald]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>firstRiftHerald</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_champ1_sum1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_champ1_sum1]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t1_champ1_sum1</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_champ1_sum2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_champ1_sum2]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t1_champ1_sum2</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_champ2_sum1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_champ2_sum1]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t1_champ2_sum1</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_champ2_sum2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_champ2_sum2]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t1_champ2_sum2</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_champ3_sum1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_champ3_sum1]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t1_champ3_sum1</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_champ3_sum2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_champ3_sum2]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t1_champ3_sum2</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_champ4_sum1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_champ4_sum1]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t1_champ4_sum1</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_champ4_sum2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_champ4_sum2]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t1_champ4_sum2</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_champ5_sum1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_champ5_sum1]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t1_champ5_sum1</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_champ5_sum2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_champ5_sum2]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t1_champ5_sum2</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_towerKills</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_towerKills]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t1_towerKills</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_inhibitorKills</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_inhibitorKills]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t1_inhibitorKills</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_baronKills</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_baronKills]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t1_baronKills</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_dragonKills</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_dragonKills]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t1_dragonKills</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_riftHeraldKills</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_riftHeraldKills]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t1_riftHeraldKills</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_champ1_sum1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_champ1_sum1]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t2_champ1_sum1</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_champ1_sum2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_champ1_sum2]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t2_champ1_sum2</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_champ2_sum1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_champ2_sum1]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t2_champ2_sum1</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_champ2_sum2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_champ2_sum2]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t2_champ2_sum2</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_champ3_sum1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_champ3_sum1]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t2_champ3_sum1</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_champ3_sum2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_champ3_sum2]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t2_champ3_sum2</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_champ4_sum1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_champ4_sum1]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t2_champ4_sum1</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_champ4_sum2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_champ4_sum2]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t2_champ4_sum2</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_champ5_sum1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_champ5_sum1]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t2_champ5_sum1</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_champ5_sum2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_champ5_sum2]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t2_champ5_sum2</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_towerKills</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_towerKills]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t2_towerKills</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_inhibitorKills</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_inhibitorKills]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t2_inhibitorKills</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_baronKills</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_baronKills]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t2_baronKills</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_dragonKills</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_dragonKills]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t2_dragonKills</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_riftHeraldKills</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_riftHeraldKills]</local-name>
+            <parent-name>[lol_games_to_pivot.csv]</parent-name>
+            <remote-alias>t2_riftHeraldKills</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Names</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Names]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Names</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pivot Field Values</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Pivot Field Values]</local-name>
+            <parent-name>[Pivot]</parent-name>
+            <remote-alias>Pivot Field Values</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Player' datatype='string' name='[Pivot Field Names]' role='dimension' type='nominal' />
+      <column caption='Champion - Split 1' datatype='string' name='[Pivot Field Values - Split 1]' role='dimension' type='nominal' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.03m22va16zbsgx13lw0i009pa1o3].[Pivot Field Values]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Pivot Field Values], &quot; &quot;, 1 ) )' />
+      </column>
+      <column caption='Champion - Split 2' datatype='string' name='[Pivot Field Values - Split 2]' role='dimension' type='nominal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.03m22va16zbsgx13lw0i009pa1o3].[Pivot Field Values]'>
+        <calculation class='tableau' formula='TRIM( SPLIT( [Pivot Field Values], &quot; &quot;, 2 ) )' />
+      </column>
+      <column caption='Champion' datatype='string' name='[Pivot Field Values]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='lol_games_to_pivot.csv' datatype='table' name='[__tableau_internal_object_id__].[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]' role='measure' type='quantitative' />
+      <column datatype='string' name='[ban champ]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Pivot Field Values]' new-bin='true'>
+          <bin default-name='true' value='&quot;-1,1,10 and 136 more&quot;'>
+            <value>&quot;-1&quot;</value>
+            <value>&quot;1&quot;</value>
+            <value>&quot;10&quot;</value>
+            <value>&quot;101&quot;</value>
+            <value>&quot;102&quot;</value>
+            <value>&quot;103&quot;</value>
+            <value>&quot;104&quot;</value>
+            <value>&quot;105&quot;</value>
+            <value>&quot;106&quot;</value>
+            <value>&quot;107&quot;</value>
+            <value>&quot;11&quot;</value>
+            <value>&quot;110&quot;</value>
+            <value>&quot;111&quot;</value>
+            <value>&quot;112&quot;</value>
+            <value>&quot;113&quot;</value>
+            <value>&quot;114&quot;</value>
+            <value>&quot;115&quot;</value>
+            <value>&quot;117&quot;</value>
+            <value>&quot;119&quot;</value>
+            <value>&quot;12&quot;</value>
+            <value>&quot;120&quot;</value>
+            <value>&quot;121&quot;</value>
+            <value>&quot;122&quot;</value>
+            <value>&quot;126&quot;</value>
+            <value>&quot;127&quot;</value>
+            <value>&quot;13&quot;</value>
+            <value>&quot;131&quot;</value>
+            <value>&quot;133&quot;</value>
+            <value>&quot;134&quot;</value>
+            <value>&quot;136&quot;</value>
+            <value>&quot;14&quot;</value>
+            <value>&quot;141&quot;</value>
+            <value>&quot;143&quot;</value>
+            <value>&quot;15&quot;</value>
+            <value>&quot;150&quot;</value>
+            <value>&quot;154&quot;</value>
+            <value>&quot;157&quot;</value>
+            <value>&quot;16&quot;</value>
+            <value>&quot;161&quot;</value>
+            <value>&quot;163&quot;</value>
+            <value>&quot;164&quot;</value>
+            <value>&quot;17&quot;</value>
+            <value>&quot;18&quot;</value>
+            <value>&quot;19&quot;</value>
+            <value>&quot;2&quot;</value>
+            <value>&quot;20&quot;</value>
+            <value>&quot;201&quot;</value>
+            <value>&quot;202&quot;</value>
+            <value>&quot;203&quot;</value>
+            <value>&quot;21&quot;</value>
+            <value>&quot;22&quot;</value>
+            <value>&quot;222&quot;</value>
+            <value>&quot;223&quot;</value>
+            <value>&quot;23&quot;</value>
+            <value>&quot;236&quot;</value>
+            <value>&quot;238&quot;</value>
+            <value>&quot;24&quot;</value>
+            <value>&quot;240&quot;</value>
+            <value>&quot;245&quot;</value>
+            <value>&quot;25&quot;</value>
+            <value>&quot;254&quot;</value>
+            <value>&quot;26&quot;</value>
+            <value>&quot;266&quot;</value>
+            <value>&quot;267&quot;</value>
+            <value>&quot;268&quot;</value>
+            <value>&quot;27&quot;</value>
+            <value>&quot;28&quot;</value>
+            <value>&quot;29&quot;</value>
+            <value>&quot;3&quot;</value>
+            <value>&quot;30&quot;</value>
+            <value>&quot;31&quot;</value>
+            <value>&quot;32&quot;</value>
+            <value>&quot;33&quot;</value>
+            <value>&quot;34&quot;</value>
+            <value>&quot;35&quot;</value>
+            <value>&quot;36&quot;</value>
+            <value>&quot;37&quot;</value>
+            <value>&quot;38&quot;</value>
+            <value>&quot;39&quot;</value>
+            <value>&quot;4&quot;</value>
+            <value>&quot;40&quot;</value>
+            <value>&quot;41&quot;</value>
+            <value>&quot;412&quot;</value>
+            <value>&quot;42&quot;</value>
+            <value>&quot;420&quot;</value>
+            <value>&quot;421&quot;</value>
+            <value>&quot;427&quot;</value>
+            <value>&quot;429&quot;</value>
+            <value>&quot;43&quot;</value>
+            <value>&quot;432&quot;</value>
+            <value>&quot;44&quot;</value>
+            <value>&quot;45&quot;</value>
+            <value>&quot;48&quot;</value>
+            <value>&quot;497&quot;</value>
+            <value>&quot;498&quot;</value>
+            <value>&quot;5&quot;</value>
+            <value>&quot;50&quot;</value>
+            <value>&quot;51&quot;</value>
+            <value>&quot;516&quot;</value>
+            <value>&quot;53&quot;</value>
+            <value>&quot;54&quot;</value>
+            <value>&quot;55&quot;</value>
+            <value>&quot;56&quot;</value>
+            <value>&quot;57&quot;</value>
+            <value>&quot;58&quot;</value>
+            <value>&quot;59&quot;</value>
+            <value>&quot;6&quot;</value>
+            <value>&quot;60&quot;</value>
+            <value>&quot;61&quot;</value>
+            <value>&quot;62&quot;</value>
+            <value>&quot;63&quot;</value>
+            <value>&quot;64&quot;</value>
+            <value>&quot;67&quot;</value>
+            <value>&quot;68&quot;</value>
+            <value>&quot;69&quot;</value>
+            <value>&quot;7&quot;</value>
+            <value>&quot;72&quot;</value>
+            <value>&quot;74&quot;</value>
+            <value>&quot;75&quot;</value>
+            <value>&quot;76&quot;</value>
+            <value>&quot;77&quot;</value>
+            <value>&quot;78&quot;</value>
+            <value>&quot;79&quot;</value>
+            <value>&quot;8&quot;</value>
+            <value>&quot;80&quot;</value>
+            <value>&quot;81&quot;</value>
+            <value>&quot;82&quot;</value>
+            <value>&quot;83&quot;</value>
+            <value>&quot;84&quot;</value>
+            <value>&quot;85&quot;</value>
+            <value>&quot;86&quot;</value>
+            <value>&quot;89&quot;</value>
+            <value>&quot;9&quot;</value>
+            <value>&quot;90&quot;</value>
+            <value>&quot;91&quot;</value>
+            <value>&quot;92&quot;</value>
+            <value>&quot;96&quot;</value>
+            <value>&quot;98&quot;</value>
+            <value>&quot;99&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column caption='Creation Time' datatype='integer' name='[creationTime]' role='measure' type='quantitative' />
+      <column caption='First Baron' datatype='integer' name='[firstBaron]' role='measure' type='quantitative' />
+      <column caption='First Blood' datatype='integer' name='[firstBlood]' role='measure' type='quantitative' />
+      <column caption='First Dragon' datatype='integer' name='[firstDragon]' role='measure' type='quantitative' />
+      <column caption='First Inhibitor' datatype='integer' name='[firstInhibitor]' role='measure' type='quantitative' />
+      <column caption='First Rift Herald' datatype='integer' name='[firstRiftHerald]' role='measure' type='quantitative' />
+      <column caption='First Tower' datatype='integer' name='[firstTower]' role='measure' type='quantitative' />
+      <column caption='Game Duration' datatype='integer' name='[gameDuration]' role='measure' type='quantitative' />
+      <column caption='Game Id' datatype='integer' name='[gameId]' role='dimension' type='ordinal' />
+      <column caption='Season Id' datatype='integer' name='[seasonId]' role='dimension' type='ordinal' />
+      <column caption='t1 baronKills' datatype='integer' name='[t1_baronKills]' role='measure' type='quantitative' />
+      <column caption='T1 Champ1 Sum1' datatype='integer' name='[t1_champ1_sum1]' role='measure' type='quantitative' />
+      <column caption='T1 Champ1 Sum2' datatype='integer' name='[t1_champ1_sum2]' role='measure' type='quantitative' />
+      <column caption='T1 Champ2 Sum1' datatype='integer' name='[t1_champ2_sum1]' role='measure' type='quantitative' />
+      <column caption='T1 Champ2 Sum2' datatype='integer' name='[t1_champ2_sum2]' role='measure' type='quantitative' />
+      <column caption='T1 Champ3 Sum1' datatype='integer' name='[t1_champ3_sum1]' role='measure' type='quantitative' />
+      <column caption='T1 Champ3 Sum2' datatype='integer' name='[t1_champ3_sum2]' role='measure' type='quantitative' />
+      <column caption='T1 Champ4 Sum1' datatype='integer' name='[t1_champ4_sum1]' role='measure' type='quantitative' />
+      <column caption='T1 Champ4 Sum2' datatype='integer' name='[t1_champ4_sum2]' role='measure' type='quantitative' />
+      <column caption='T1 Champ5 Sum1' datatype='integer' name='[t1_champ5_sum1]' role='measure' type='quantitative' />
+      <column caption='T1 Champ5 Sum2' datatype='integer' name='[t1_champ5_sum2]' role='measure' type='quantitative' />
+      <column caption='t1 dragonKills' datatype='integer' name='[t1_dragonKills]' role='measure' type='quantitative' />
+      <column caption='t1 inhibitorKills' datatype='integer' name='[t1_inhibitorKills]' role='measure' type='quantitative' />
+      <column caption='t1 riftHeraldKills' datatype='integer' name='[t1_riftHeraldKills]' role='measure' type='quantitative' />
+      <column caption='t1 towerKills' datatype='integer' name='[t1_towerKills]' role='measure' type='quantitative' />
+      <column caption='t2 baronKills' datatype='integer' name='[t2_baronKills]' role='measure' type='quantitative' />
+      <column caption='T2 Champ1 Sum1' datatype='integer' name='[t2_champ1_sum1]' role='measure' type='quantitative' />
+      <column caption='T2 Champ1 Sum2' datatype='integer' name='[t2_champ1_sum2]' role='measure' type='quantitative' />
+      <column caption='T2 Champ2 Sum1' datatype='integer' name='[t2_champ2_sum1]' role='measure' type='quantitative' />
+      <column caption='T2 Champ2 Sum2' datatype='integer' name='[t2_champ2_sum2]' role='measure' type='quantitative' />
+      <column caption='T2 Champ3 Sum1' datatype='integer' name='[t2_champ3_sum1]' role='measure' type='quantitative' />
+      <column caption='T2 Champ3 Sum2' datatype='integer' name='[t2_champ3_sum2]' role='measure' type='quantitative' />
+      <column caption='T2 Champ4 Sum1' datatype='integer' name='[t2_champ4_sum1]' role='measure' type='quantitative' />
+      <column caption='T2 Champ4 Sum2' datatype='integer' name='[t2_champ4_sum2]' role='measure' type='quantitative' />
+      <column caption='T2 Champ5 Sum1' datatype='integer' name='[t2_champ5_sum1]' role='measure' type='quantitative' />
+      <column caption='T2 Champ5 Sum2' datatype='integer' name='[t2_champ5_sum2]' role='measure' type='quantitative' />
+      <column caption='t2 dragonKills' datatype='integer' name='[t2_dragonKills]' role='measure' type='quantitative' />
+      <column caption='t2 inhibitorKills' datatype='integer' name='[t2_inhibitorKills]' role='measure' type='quantitative' />
+      <column caption='t2 riftHeraldKills' datatype='integer' name='[t2_riftHeraldKills]' role='measure' type='quantitative' />
+      <column caption='t2 towerKills' datatype='integer' name='[t2_towerKills]' role='measure' type='quantitative' />
+      <column caption='Winner' datatype='integer' name='[winner]' role='measure' type='quantitative' />
+      <column-instance column='[Pivot Field Values]' derivation='None' name='[none:Pivot Field Values:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Pivot Field Values:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Aurelion Sol&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Fiora&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Karma&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Maokai&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Renekton&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Taric&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Xayah&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Aatrox&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Diana&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Ivern&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Lee Sin&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Orianna&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Skarner&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Veigar&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Amumu&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Elise&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Jayce&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Lulu&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Quinn&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Syndra&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Vladimir&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Brand&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Garen&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Kayle&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Morgana&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Ryze&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Trundle&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Yorick&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Azir&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Fizz&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Karthus&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Master Yi&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Rengar&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Teemo&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Xerath&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Anivia&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Evelynn&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Jhin&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Lux&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Rakan&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Tahm Kench&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Volibear&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Corki&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Illaoi&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Kog&apos;Maw&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Nunu&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Sion&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Varus&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Ahri&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Dr. Mundo&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Janna&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Leona&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Ornn&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Sona&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Vel&apos;Koz&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Cassiopeia&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Hecarim&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Kindred&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Nidalee&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Shyvana&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Udyr&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Zilean&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Annie&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Ezreal&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Jinx&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Malphite&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Rammus&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Taliyah&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Warwick&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Braum&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Gnar&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Kayn&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Nami&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Sejuani&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Tryndamere&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Zac&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Caitlyn&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Gragas&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Kennen&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Nasus&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Shaco&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Twisted Fate&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Zed&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Cho&apos;Gath&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Heimerdinger&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Kled&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Nocturne&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Singed&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Urgot&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Zyra&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Darius&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Irelia&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;LeBlanc&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Olaf&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Sivir&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Vayne&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Bard&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Galio&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Kassadin&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Miss Fortune&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Riven&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Thresh&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Xin Zhao&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Ashe&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Fiddlesticks&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Kalista&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Malzahar&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Rek&apos;Sai&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Talon&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Wukong&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Akali&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Draven&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Jarvan IV&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Lissandra&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Pantheon&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Soraka&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Vi&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Camille&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Graves&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Kha&apos;Zix&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Nautilus&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Shen&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Twitch&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Ziggs&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Blitzcrank&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Gangplank&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Katarina&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Mordekaiser&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Rumble&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Tristana&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Yasuo&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Alistar&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Ekko&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Jax&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Lucian&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Poppy&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Swain&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Viktor&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Switzerland&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='lol_games_to_pivot.csv' id='lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73'>
+            <properties context=''>
+              <relation name='Pivot' type='pivot'>
+                <columns>
+                  <column datatype='string' name='Pivot Field Names' />
+                  <column datatype='string' name='Pivot Field Values' />
+                </columns>
+                <tag name='Pivot Field Names'>
+                  <value name='[T1 Champ1Id]' />
+                  <value name='[T1 Champ2Id]' />
+                  <value name='[T1 Champ3Id]' />
+                  <value name='[T1 Champ4Id]' />
+                  <value name='[T1 Champ5Id]' />
+                  <value name='[T2 Champ1Id]' />
+                  <value name='[T2 Champ2Id]' />
+                  <value name='[T2 Champ3Id]' />
+                  <value name='[T2 Champ4Id]' />
+                  <value name='[T2 Champ5Id]' />
+                  <value name='[T1 Ban1]' />
+                  <value name='[T1 Ban2]' />
+                  <value name='[T1 Ban3]' />
+                  <value name='[T1 Ban4]' />
+                  <value name='[T1 Ban5]' />
+                  <value name='[T2 Ban1]' />
+                  <value name='[T2 Ban2]' />
+                  <value name='[T2 Ban3]' />
+                  <value name='[T2 Ban4]' />
+                  <value name='[T2 Ban5]' />
+                </tag>
+                <groups>
+                  <group name='Pivot Field Values'>
+                    <field name='[lol_games_to_pivot.csv].[t1_champ1id]' />
+                    <field name='[lol_games_to_pivot.csv].[t1_champ2id]' />
+                    <field name='[lol_games_to_pivot.csv].[t1_champ3id]' />
+                    <field name='[lol_games_to_pivot.csv].[t1_champ4id]' />
+                    <field name='[lol_games_to_pivot.csv].[t1_champ5id]' />
+                    <field name='[lol_games_to_pivot.csv].[t2_champ1id]' />
+                    <field name='[lol_games_to_pivot.csv].[t2_champ2id]' />
+                    <field name='[lol_games_to_pivot.csv].[t2_champ3id]' />
+                    <field name='[lol_games_to_pivot.csv].[t2_champ4id]' />
+                    <field name='[lol_games_to_pivot.csv].[t2_champ5id]' />
+                    <field name='[lol_games_to_pivot.csv].[t1_ban1]' />
+                    <field name='[lol_games_to_pivot.csv].[t1_ban2]' />
+                    <field name='[lol_games_to_pivot.csv].[t1_ban3]' />
+                    <field name='[lol_games_to_pivot.csv].[t1_ban4]' />
+                    <field name='[lol_games_to_pivot.csv].[t1_ban5]' />
+                    <field name='[lol_games_to_pivot.csv].[t2_ban1]' />
+                    <field name='[lol_games_to_pivot.csv].[t2_ban2]' />
+                    <field name='[lol_games_to_pivot.csv].[t2_ban3]' />
+                    <field name='[lol_games_to_pivot.csv].[t2_ban4]' />
+                    <field name='[lol_games_to_pivot.csv].[t2_ban5]' />
+                  </group>
+                </groups>
+                <relation connection='textscan.0klg3171fvmms710k4dlk0ko9uqi' name='lol_games_to_pivot.csv' table='[lol_games_to_pivot#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='integer' name='F1' ordinal='0' />
+                    <column datatype='integer' name='gameId' ordinal='1' />
+                    <column datatype='integer' name='creationTime' ordinal='2' />
+                    <column datatype='integer' name='gameDuration' ordinal='3' />
+                    <column datatype='integer' name='seasonId' ordinal='4' />
+                    <column datatype='integer' name='winner' ordinal='5' />
+                    <column datatype='integer' name='firstBlood' ordinal='6' />
+                    <column datatype='integer' name='firstTower' ordinal='7' />
+                    <column datatype='integer' name='firstInhibitor' ordinal='8' />
+                    <column datatype='integer' name='firstBaron' ordinal='9' />
+                    <column datatype='integer' name='firstDragon' ordinal='10' />
+                    <column datatype='integer' name='firstRiftHerald' ordinal='11' />
+                    <column datatype='string' name='t1_champ1id' ordinal='12' />
+                    <column datatype='integer' name='t1_champ1_sum1' ordinal='13' />
+                    <column datatype='integer' name='t1_champ1_sum2' ordinal='14' />
+                    <column datatype='string' name='t1_champ2id' ordinal='15' />
+                    <column datatype='integer' name='t1_champ2_sum1' ordinal='16' />
+                    <column datatype='integer' name='t1_champ2_sum2' ordinal='17' />
+                    <column datatype='string' name='t1_champ3id' ordinal='18' />
+                    <column datatype='integer' name='t1_champ3_sum1' ordinal='19' />
+                    <column datatype='integer' name='t1_champ3_sum2' ordinal='20' />
+                    <column datatype='string' name='t1_champ4id' ordinal='21' />
+                    <column datatype='integer' name='t1_champ4_sum1' ordinal='22' />
+                    <column datatype='integer' name='t1_champ4_sum2' ordinal='23' />
+                    <column datatype='string' name='t1_champ5id' ordinal='24' />
+                    <column datatype='integer' name='t1_champ5_sum1' ordinal='25' />
+                    <column datatype='integer' name='t1_champ5_sum2' ordinal='26' />
+                    <column datatype='integer' name='t1_towerKills' ordinal='27' />
+                    <column datatype='integer' name='t1_inhibitorKills' ordinal='28' />
+                    <column datatype='integer' name='t1_baronKills' ordinal='29' />
+                    <column datatype='integer' name='t1_dragonKills' ordinal='30' />
+                    <column datatype='integer' name='t1_riftHeraldKills' ordinal='31' />
+                    <column datatype='integer' name='t1_ban1' ordinal='32' />
+                    <column datatype='integer' name='t1_ban2' ordinal='33' />
+                    <column datatype='integer' name='t1_ban3' ordinal='34' />
+                    <column datatype='integer' name='t1_ban4' ordinal='35' />
+                    <column datatype='integer' name='t1_ban5' ordinal='36' />
+                    <column datatype='string' name='t2_champ1id' ordinal='37' />
+                    <column datatype='integer' name='t2_champ1_sum1' ordinal='38' />
+                    <column datatype='integer' name='t2_champ1_sum2' ordinal='39' />
+                    <column datatype='string' name='t2_champ2id' ordinal='40' />
+                    <column datatype='integer' name='t2_champ2_sum1' ordinal='41' />
+                    <column datatype='integer' name='t2_champ2_sum2' ordinal='42' />
+                    <column datatype='string' name='t2_champ3id' ordinal='43' />
+                    <column datatype='integer' name='t2_champ3_sum1' ordinal='44' />
+                    <column datatype='integer' name='t2_champ3_sum2' ordinal='45' />
+                    <column datatype='string' name='t2_champ4id' ordinal='46' />
+                    <column datatype='integer' name='t2_champ4_sum1' ordinal='47' />
+                    <column datatype='integer' name='t2_champ4_sum2' ordinal='48' />
+                    <column datatype='string' name='t2_champ5id' ordinal='49' />
+                    <column datatype='integer' name='t2_champ5_sum1' ordinal='50' />
+                    <column datatype='integer' name='t2_champ5_sum2' ordinal='51' />
+                    <column datatype='integer' name='t2_towerKills' ordinal='52' />
+                    <column datatype='integer' name='t2_inhibitorKills' ordinal='53' />
+                    <column datatype='integer' name='t2_baronKills' ordinal='54' />
+                    <column datatype='integer' name='t2_dragonKills' ordinal='55' />
+                    <column datatype='integer' name='t2_riftHeraldKills' ordinal='56' />
+                    <column datatype='integer' name='t2_ban1' ordinal='57' />
+                    <column datatype='integer' name='t2_ban2' ordinal='58' />
+                    <column datatype='integer' name='t2_ban3' ordinal='59' />
+                    <column datatype='integer' name='t2_ban4' ordinal='60' />
+                    <column datatype='integer' name='t2_ban5' ordinal='61' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='lol_games_to_pivot' name='federated.03m22va16zbsgx13lw0i009pa1o3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03m22va16zbsgx13lw0i009pa1o3'>
+            <column caption='Champion' datatype='string' name='[Pivot Field Values]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.false...column caption='lol_games_to_pivot.csv' datatype='integer' name='[__tableau_internal_object_id__].[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='lol_games_to_pivot.csv' datatype='table' name='[__tableau_internal_object_id__].[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]' role='measure' type='quantitative' />
+            <column-instance column='[Pivot Field Values]' derivation='None' name='[none:Pivot Field Values:nk]' pivot='key' type='nominal' />
+            <column-instance column='[__tableau_internal_object_id__].[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]' derivation='Count' name='[pcto:cnt:lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Table' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.03m22va16zbsgx13lw0i009pa1o3].[none:Pivot Field Values:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([Pivot Field Values])' function='order' user:ui-marker='order'>
+                <groupfilter from='&quot;-1&quot;' function='range' level='[none:Pivot Field Values:nk]' to='&quot;99&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.03m22va16zbsgx13lw0i009pa1o3].[none:Pivot Field Values:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.03m22va16zbsgx13lw0i009pa1o3].[__tableau_internal_object_id__].[cnt:lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.03m22va16zbsgx13lw0i009pa1o3].[none:Pivot Field Values:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.03m22va16zbsgx13lw0i009pa1o3].[none:Pivot Field Values:nk]</rows>
+        <cols>[federated.03m22va16zbsgx13lw0i009pa1o3].[pcto:cnt:lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73:qk:2]</cols>
+      </table>
+      <simple-id uuid='{D68FA730-80C8-4AED-B6C2-3E7AB338F0A1}' />
+    </worksheet>
+    <worksheet name='top 10 of champ pick percentage'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='lol_games_to_pivot' name='federated.03m22va16zbsgx13lw0i009pa1o3' />
+          </datasources>
+          <datasource-dependencies datasource='federated.03m22va16zbsgx13lw0i009pa1o3'>
+            <_.fcp.ObjectModelTableType.false...column caption='lol_games_to_pivot.csv' datatype='integer' name='[__tableau_internal_object_id__].[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]' role='measure' type='quantitative' />
+            <column caption='Champion' datatype='string' name='[Pivot Field Values]' role='dimension' type='nominal' />
+            <_.fcp.ObjectModelTableType.true...column caption='lol_games_to_pivot.csv' datatype='table' name='[__tableau_internal_object_id__].[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]' role='measure' type='quantitative' />
+            <column-instance column='[Pivot Field Values]' derivation='None' name='[none:Pivot Field Values:nk]' pivot='key' type='nominal' />
+            <column-instance column='[__tableau_internal_object_id__].[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73]' derivation='Count' name='[pcto:cnt:lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73:qk:9]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.03m22va16zbsgx13lw0i009pa1o3].[Pivot Field Values]' ordering-type='Field' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.03m22va16zbsgx13lw0i009pa1o3].[none:Pivot Field Values:nk]'>
+            <groupfilter count='15' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='COUNT([__tableau_internal_object_id__].[lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73])' function='order' user:ui-marker='order'>
+                <groupfilter from='&quot;Aatrox&quot;' function='range' level='[none:Pivot Field Values:nk]' to='&quot;Zyra&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.03m22va16zbsgx13lw0i009pa1o3].[none:Pivot Field Values:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Thresh&quot;</bucket>
+              <bucket>&quot;Tristana&quot;</bucket>
+              <bucket>&quot;Vayne&quot;</bucket>
+              <bucket>&quot;Kayn&quot;</bucket>
+              <bucket>&quot;Lee Sin&quot;</bucket>
+              <bucket>&quot;Twitch&quot;</bucket>
+              <bucket>&quot;Janna&quot;</bucket>
+              <bucket>&quot;Lucian&quot;</bucket>
+              <bucket>&quot;Jhin&quot;</bucket>
+              <bucket>&quot;Jinx&quot;</bucket>
+              <bucket>&quot;Yasuo&quot;</bucket>
+              <bucket>&quot;Xayah&quot;</bucket>
+              <bucket>&quot;Lux&quot;</bucket>
+              <bucket>&quot;Blitzcrank&quot;</bucket>
+              <bucket>&quot;Rakan&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.03m22va16zbsgx13lw0i009pa1o3].[none:Pivot Field Values:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.03m22va16zbsgx13lw0i009pa1o3].[pcto:cnt:lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73:qk:9]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.03m22va16zbsgx13lw0i009pa1o3].[none:Pivot Field Values:nk]</rows>
+        <cols>[federated.03m22va16zbsgx13lw0i009pa1o3].[pcto:cnt:lol_games_to_pivot.csv_67A568AC238E48AF8A45E5FFACA4CC73:qk:9]</cols>
+      </table>
+      <simple-id uuid='{ED87BBFB-CA5C-4BB5-B4A8-6D93A28B0E7A}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='37'>
+    <window class='worksheet' maximized='true' name='top 10 of champ pick percentage'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{45CEA063-146D-4556-97B3-3725536B14B5}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{E6A461C8-8063-4C04-AD6D-7F2CBC26AE6C}' />
+    </window>
+  </windows>
+</workbook>
