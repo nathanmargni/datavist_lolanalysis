@@ -1,0 +1,1275 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20213.21.0917.1006                               -->
+<workbook original-version='18.1' source-build='2021.3.1 (20213.21.0917.1006)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='games' inline='true' name='federated.1esjc5z0kb7sis1buuyqt10qvbi7' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='games' name='textscan.1mumcxc1yz1zws13gm377048h1qe'>
+            <connection class='textscan' directory='D:/School/second_year/data_vis/datavist_lolanalysis/data/csv' filename='games.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1mumcxc1yz1zws13gm377048h1qe' name='games.csv' table='[games#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='gameId' ordinal='0' />
+            <column datatype='integer' name='creationTime' ordinal='1' />
+            <column datatype='integer' name='gameDuration' ordinal='2' />
+            <column datatype='integer' name='seasonId' ordinal='3' />
+            <column datatype='integer' name='winner' ordinal='4' />
+            <column datatype='integer' name='firstBlood' ordinal='5' />
+            <column datatype='integer' name='firstTower' ordinal='6' />
+            <column datatype='integer' name='firstInhibitor' ordinal='7' />
+            <column datatype='integer' name='firstBaron' ordinal='8' />
+            <column datatype='integer' name='firstDragon' ordinal='9' />
+            <column datatype='integer' name='firstRiftHerald' ordinal='10' />
+            <column datatype='integer' name='t1_champ1id' ordinal='11' />
+            <column datatype='integer' name='t1_champ1_sum1' ordinal='12' />
+            <column datatype='integer' name='t1_champ1_sum2' ordinal='13' />
+            <column datatype='integer' name='t1_champ2id' ordinal='14' />
+            <column datatype='integer' name='t1_champ2_sum1' ordinal='15' />
+            <column datatype='integer' name='t1_champ2_sum2' ordinal='16' />
+            <column datatype='integer' name='t1_champ3id' ordinal='17' />
+            <column datatype='integer' name='t1_champ3_sum1' ordinal='18' />
+            <column datatype='integer' name='t1_champ3_sum2' ordinal='19' />
+            <column datatype='integer' name='t1_champ4id' ordinal='20' />
+            <column datatype='integer' name='t1_champ4_sum1' ordinal='21' />
+            <column datatype='integer' name='t1_champ4_sum2' ordinal='22' />
+            <column datatype='integer' name='t1_champ5id' ordinal='23' />
+            <column datatype='integer' name='t1_champ5_sum1' ordinal='24' />
+            <column datatype='integer' name='t1_champ5_sum2' ordinal='25' />
+            <column datatype='integer' name='t1_towerKills' ordinal='26' />
+            <column datatype='integer' name='t1_inhibitorKills' ordinal='27' />
+            <column datatype='integer' name='t1_baronKills' ordinal='28' />
+            <column datatype='integer' name='t1_dragonKills' ordinal='29' />
+            <column datatype='integer' name='t1_riftHeraldKills' ordinal='30' />
+            <column datatype='integer' name='t1_ban1' ordinal='31' />
+            <column datatype='integer' name='t1_ban2' ordinal='32' />
+            <column datatype='integer' name='t1_ban3' ordinal='33' />
+            <column datatype='integer' name='t1_ban4' ordinal='34' />
+            <column datatype='integer' name='t1_ban5' ordinal='35' />
+            <column datatype='integer' name='t2_champ1id' ordinal='36' />
+            <column datatype='integer' name='t2_champ1_sum1' ordinal='37' />
+            <column datatype='integer' name='t2_champ1_sum2' ordinal='38' />
+            <column datatype='integer' name='t2_champ2id' ordinal='39' />
+            <column datatype='integer' name='t2_champ2_sum1' ordinal='40' />
+            <column datatype='integer' name='t2_champ2_sum2' ordinal='41' />
+            <column datatype='integer' name='t2_champ3id' ordinal='42' />
+            <column datatype='integer' name='t2_champ3_sum1' ordinal='43' />
+            <column datatype='integer' name='t2_champ3_sum2' ordinal='44' />
+            <column datatype='integer' name='t2_champ4id' ordinal='45' />
+            <column datatype='integer' name='t2_champ4_sum1' ordinal='46' />
+            <column datatype='integer' name='t2_champ4_sum2' ordinal='47' />
+            <column datatype='integer' name='t2_champ5id' ordinal='48' />
+            <column datatype='integer' name='t2_champ5_sum1' ordinal='49' />
+            <column datatype='integer' name='t2_champ5_sum2' ordinal='50' />
+            <column datatype='integer' name='t2_towerKills' ordinal='51' />
+            <column datatype='integer' name='t2_inhibitorKills' ordinal='52' />
+            <column datatype='integer' name='t2_baronKills' ordinal='53' />
+            <column datatype='integer' name='t2_dragonKills' ordinal='54' />
+            <column datatype='integer' name='t2_riftHeraldKills' ordinal='55' />
+            <column datatype='integer' name='t2_ban1' ordinal='56' />
+            <column datatype='integer' name='t2_ban2' ordinal='57' />
+            <column datatype='integer' name='t2_ban3' ordinal='58' />
+            <column datatype='integer' name='t2_ban4' ordinal='59' />
+            <column datatype='integer' name='t2_ban5' ordinal='60' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1mumcxc1yz1zws13gm377048h1qe' name='games.csv' table='[games#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='gameId' ordinal='0' />
+            <column datatype='integer' name='creationTime' ordinal='1' />
+            <column datatype='integer' name='gameDuration' ordinal='2' />
+            <column datatype='integer' name='seasonId' ordinal='3' />
+            <column datatype='integer' name='winner' ordinal='4' />
+            <column datatype='integer' name='firstBlood' ordinal='5' />
+            <column datatype='integer' name='firstTower' ordinal='6' />
+            <column datatype='integer' name='firstInhibitor' ordinal='7' />
+            <column datatype='integer' name='firstBaron' ordinal='8' />
+            <column datatype='integer' name='firstDragon' ordinal='9' />
+            <column datatype='integer' name='firstRiftHerald' ordinal='10' />
+            <column datatype='integer' name='t1_champ1id' ordinal='11' />
+            <column datatype='integer' name='t1_champ1_sum1' ordinal='12' />
+            <column datatype='integer' name='t1_champ1_sum2' ordinal='13' />
+            <column datatype='integer' name='t1_champ2id' ordinal='14' />
+            <column datatype='integer' name='t1_champ2_sum1' ordinal='15' />
+            <column datatype='integer' name='t1_champ2_sum2' ordinal='16' />
+            <column datatype='integer' name='t1_champ3id' ordinal='17' />
+            <column datatype='integer' name='t1_champ3_sum1' ordinal='18' />
+            <column datatype='integer' name='t1_champ3_sum2' ordinal='19' />
+            <column datatype='integer' name='t1_champ4id' ordinal='20' />
+            <column datatype='integer' name='t1_champ4_sum1' ordinal='21' />
+            <column datatype='integer' name='t1_champ4_sum2' ordinal='22' />
+            <column datatype='integer' name='t1_champ5id' ordinal='23' />
+            <column datatype='integer' name='t1_champ5_sum1' ordinal='24' />
+            <column datatype='integer' name='t1_champ5_sum2' ordinal='25' />
+            <column datatype='integer' name='t1_towerKills' ordinal='26' />
+            <column datatype='integer' name='t1_inhibitorKills' ordinal='27' />
+            <column datatype='integer' name='t1_baronKills' ordinal='28' />
+            <column datatype='integer' name='t1_dragonKills' ordinal='29' />
+            <column datatype='integer' name='t1_riftHeraldKills' ordinal='30' />
+            <column datatype='integer' name='t1_ban1' ordinal='31' />
+            <column datatype='integer' name='t1_ban2' ordinal='32' />
+            <column datatype='integer' name='t1_ban3' ordinal='33' />
+            <column datatype='integer' name='t1_ban4' ordinal='34' />
+            <column datatype='integer' name='t1_ban5' ordinal='35' />
+            <column datatype='integer' name='t2_champ1id' ordinal='36' />
+            <column datatype='integer' name='t2_champ1_sum1' ordinal='37' />
+            <column datatype='integer' name='t2_champ1_sum2' ordinal='38' />
+            <column datatype='integer' name='t2_champ2id' ordinal='39' />
+            <column datatype='integer' name='t2_champ2_sum1' ordinal='40' />
+            <column datatype='integer' name='t2_champ2_sum2' ordinal='41' />
+            <column datatype='integer' name='t2_champ3id' ordinal='42' />
+            <column datatype='integer' name='t2_champ3_sum1' ordinal='43' />
+            <column datatype='integer' name='t2_champ3_sum2' ordinal='44' />
+            <column datatype='integer' name='t2_champ4id' ordinal='45' />
+            <column datatype='integer' name='t2_champ4_sum1' ordinal='46' />
+            <column datatype='integer' name='t2_champ4_sum2' ordinal='47' />
+            <column datatype='integer' name='t2_champ5id' ordinal='48' />
+            <column datatype='integer' name='t2_champ5_sum1' ordinal='49' />
+            <column datatype='integer' name='t2_champ5_sum2' ordinal='50' />
+            <column datatype='integer' name='t2_towerKills' ordinal='51' />
+            <column datatype='integer' name='t2_inhibitorKills' ordinal='52' />
+            <column datatype='integer' name='t2_baronKills' ordinal='53' />
+            <column datatype='integer' name='t2_dragonKills' ordinal='54' />
+            <column datatype='integer' name='t2_riftHeraldKills' ordinal='55' />
+            <column datatype='integer' name='t2_ban1' ordinal='56' />
+            <column datatype='integer' name='t2_ban2' ordinal='57' />
+            <column datatype='integer' name='t2_ban3' ordinal='58' />
+            <column datatype='integer' name='t2_ban4' ordinal='59' />
+            <column datatype='integer' name='t2_ban5' ordinal='60' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='record-delimiter'>&quot;\\r&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gameId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[gameId]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>gameId</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>creationTime</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[creationTime]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>creationTime</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gameDuration</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[gameDuration]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>gameDuration</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>seasonId</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[seasonId]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>seasonId</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>winner</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[winner]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>winner</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>firstBlood</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[firstBlood]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>firstBlood</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>firstTower</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[firstTower]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>firstTower</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>firstInhibitor</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[firstInhibitor]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>firstInhibitor</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>firstBaron</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[firstBaron]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>firstBaron</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>firstDragon</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[firstDragon]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>firstDragon</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>firstRiftHerald</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[firstRiftHerald]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>firstRiftHerald</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_champ1id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_champ1id]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t1_champ1id</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_champ1_sum1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_champ1_sum1]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t1_champ1_sum1</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_champ1_sum2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_champ1_sum2]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t1_champ1_sum2</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_champ2id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_champ2id]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t1_champ2id</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_champ2_sum1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_champ2_sum1]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t1_champ2_sum1</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_champ2_sum2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_champ2_sum2]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t1_champ2_sum2</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_champ3id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_champ3id]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t1_champ3id</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_champ3_sum1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_champ3_sum1]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t1_champ3_sum1</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_champ3_sum2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_champ3_sum2]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t1_champ3_sum2</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_champ4id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_champ4id]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t1_champ4id</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_champ4_sum1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_champ4_sum1]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t1_champ4_sum1</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_champ4_sum2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_champ4_sum2]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t1_champ4_sum2</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_champ5id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_champ5id]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t1_champ5id</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_champ5_sum1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_champ5_sum1]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t1_champ5_sum1</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_champ5_sum2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_champ5_sum2]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t1_champ5_sum2</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_towerKills</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_towerKills]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t1_towerKills</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_inhibitorKills</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_inhibitorKills]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t1_inhibitorKills</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_baronKills</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_baronKills]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t1_baronKills</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_dragonKills</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_dragonKills]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t1_dragonKills</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_riftHeraldKills</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_riftHeraldKills]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t1_riftHeraldKills</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_ban1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_ban1]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t1_ban1</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_ban2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_ban2]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t1_ban2</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_ban3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_ban3]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t1_ban3</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_ban4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_ban4]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t1_ban4</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t1_ban5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t1_ban5]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t1_ban5</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_champ1id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_champ1id]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t2_champ1id</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_champ1_sum1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_champ1_sum1]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t2_champ1_sum1</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_champ1_sum2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_champ1_sum2]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t2_champ1_sum2</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_champ2id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_champ2id]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t2_champ2id</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_champ2_sum1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_champ2_sum1]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t2_champ2_sum1</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_champ2_sum2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_champ2_sum2]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t2_champ2_sum2</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_champ3id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_champ3id]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t2_champ3id</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_champ3_sum1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_champ3_sum1]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t2_champ3_sum1</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_champ3_sum2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_champ3_sum2]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t2_champ3_sum2</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_champ4id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_champ4id]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t2_champ4id</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_champ4_sum1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_champ4_sum1]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t2_champ4_sum1</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_champ4_sum2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_champ4_sum2]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t2_champ4_sum2</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_champ5id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_champ5id]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t2_champ5id</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_champ5_sum1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_champ5_sum1]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t2_champ5_sum1</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_champ5_sum2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_champ5_sum2]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t2_champ5_sum2</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_towerKills</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_towerKills]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t2_towerKills</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_inhibitorKills</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_inhibitorKills]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t2_inhibitorKills</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_baronKills</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_baronKills]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t2_baronKills</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_dragonKills</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_dragonKills]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t2_dragonKills</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_riftHeraldKills</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_riftHeraldKills]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t2_riftHeraldKills</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_ban1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_ban1]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t2_ban1</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_ban2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_ban2]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t2_ban2</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_ban3</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_ban3]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t2_ban3</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_ban4</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_ban4]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t2_ban4</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>t2_ban5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[t2_ban5]</local-name>
+            <parent-name>[games.csv]</parent-name>
+            <remote-alias>t2_ban5</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[games.csv_54F9E7C8C89747B6973D390D946DE38E]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='games.csv' datatype='table' name='[__tableau_internal_object_id__].[games.csv_54F9E7C8C89747B6973D390D946DE38E]' role='measure' type='quantitative' />
+      <column caption='Creation Time' datatype='integer' name='[creationTime]' role='measure' type='quantitative' />
+      <column caption='First Baron' datatype='integer' name='[firstBaron]' role='measure' type='quantitative' />
+      <column caption='First Blood' datatype='integer' name='[firstBlood]' role='measure' type='quantitative' />
+      <column caption='First Dragon' datatype='integer' name='[firstDragon]' role='measure' type='quantitative' />
+      <column caption='First Inhibitor' datatype='integer' name='[firstInhibitor]' role='measure' type='quantitative' />
+      <column caption='First Rift Herald' datatype='integer' name='[firstRiftHerald]' role='measure' type='quantitative' />
+      <column caption='First Tower' datatype='integer' name='[firstTower]' role='measure' type='quantitative' />
+      <column caption='Game Duration' datatype='integer' name='[gameDuration]' role='measure' type='quantitative' />
+      <column caption='Game Id' datatype='integer' name='[gameId]' role='dimension' type='ordinal' />
+      <column caption='Season Id' datatype='integer' name='[seasonId]' role='dimension' type='ordinal' />
+      <column caption='T1 Ban1' datatype='integer' name='[t1_ban1]' role='measure' type='quantitative' />
+      <column caption='T1 Ban2' datatype='integer' name='[t1_ban2]' role='measure' type='quantitative' />
+      <column caption='T1 Ban3' datatype='integer' name='[t1_ban3]' role='measure' type='quantitative' />
+      <column caption='T1 Ban4' datatype='integer' name='[t1_ban4]' role='measure' type='quantitative' />
+      <column caption='T1 Ban5' datatype='integer' name='[t1_ban5]' role='measure' type='quantitative' />
+      <column caption='t1 baronKills' datatype='integer' name='[t1_baronKills]' role='measure' type='quantitative' />
+      <column caption='T1 Champ1 Sum1' datatype='integer' name='[t1_champ1_sum1]' role='measure' type='quantitative' />
+      <column caption='T1 Champ1 Sum2' datatype='integer' name='[t1_champ1_sum2]' role='measure' type='quantitative' />
+      <column caption='T1 Champ1Id' datatype='integer' name='[t1_champ1id]' role='dimension' type='ordinal' />
+      <column caption='T1 Champ2 Sum1' datatype='integer' name='[t1_champ2_sum1]' role='measure' type='quantitative' />
+      <column caption='T1 Champ2 Sum2' datatype='integer' name='[t1_champ2_sum2]' role='measure' type='quantitative' />
+      <column caption='T1 Champ2Id' datatype='integer' name='[t1_champ2id]' role='dimension' type='ordinal' />
+      <column caption='T1 Champ3 Sum1' datatype='integer' name='[t1_champ3_sum1]' role='measure' type='quantitative' />
+      <column caption='T1 Champ3 Sum2' datatype='integer' name='[t1_champ3_sum2]' role='measure' type='quantitative' />
+      <column caption='T1 Champ3Id' datatype='integer' name='[t1_champ3id]' role='dimension' type='ordinal' />
+      <column caption='T1 Champ4 Sum1' datatype='integer' name='[t1_champ4_sum1]' role='measure' type='quantitative' />
+      <column caption='T1 Champ4 Sum2' datatype='integer' name='[t1_champ4_sum2]' role='measure' type='quantitative' />
+      <column caption='T1 Champ4Id' datatype='integer' name='[t1_champ4id]' role='dimension' type='ordinal' />
+      <column caption='T1 Champ5 Sum1' datatype='integer' name='[t1_champ5_sum1]' role='measure' type='quantitative' />
+      <column caption='T1 Champ5 Sum2' datatype='integer' name='[t1_champ5_sum2]' role='measure' type='quantitative' />
+      <column caption='T1 Champ5Id' datatype='integer' name='[t1_champ5id]' role='dimension' type='ordinal' />
+      <column caption='t1 dragonKills' datatype='integer' name='[t1_dragonKills]' role='measure' type='quantitative' />
+      <column caption='t1 inhibitorKills' datatype='integer' name='[t1_inhibitorKills]' role='measure' type='quantitative' />
+      <column caption='t1 riftHeraldKills' datatype='integer' name='[t1_riftHeraldKills]' role='measure' type='quantitative' />
+      <column caption='t1 towerKills' datatype='integer' name='[t1_towerKills]' role='measure' type='quantitative' />
+      <column caption='T2 Ban1' datatype='integer' name='[t2_ban1]' role='measure' type='quantitative' />
+      <column caption='T2 Ban2' datatype='integer' name='[t2_ban2]' role='measure' type='quantitative' />
+      <column caption='T2 Ban3' datatype='integer' name='[t2_ban3]' role='measure' type='quantitative' />
+      <column caption='T2 Ban4' datatype='integer' name='[t2_ban4]' role='measure' type='quantitative' />
+      <column caption='T2 Ban5' datatype='integer' name='[t2_ban5]' role='measure' type='quantitative' />
+      <column caption='t2 baronKills' datatype='integer' name='[t2_baronKills]' role='measure' type='quantitative' />
+      <column caption='T2 Champ1 Sum1' datatype='integer' name='[t2_champ1_sum1]' role='measure' type='quantitative' />
+      <column caption='T2 Champ1 Sum2' datatype='integer' name='[t2_champ1_sum2]' role='measure' type='quantitative' />
+      <column caption='T2 Champ1Id' datatype='integer' name='[t2_champ1id]' role='dimension' type='ordinal' />
+      <column caption='T2 Champ2 Sum1' datatype='integer' name='[t2_champ2_sum1]' role='measure' type='quantitative' />
+      <column caption='T2 Champ2 Sum2' datatype='integer' name='[t2_champ2_sum2]' role='measure' type='quantitative' />
+      <column caption='T2 Champ2Id' datatype='integer' name='[t2_champ2id]' role='dimension' type='ordinal' />
+      <column caption='T2 Champ3 Sum1' datatype='integer' name='[t2_champ3_sum1]' role='measure' type='quantitative' />
+      <column caption='T2 Champ3 Sum2' datatype='integer' name='[t2_champ3_sum2]' role='measure' type='quantitative' />
+      <column caption='T2 Champ3Id' datatype='integer' name='[t2_champ3id]' role='dimension' type='ordinal' />
+      <column caption='T2 Champ4 Sum1' datatype='integer' name='[t2_champ4_sum1]' role='measure' type='quantitative' />
+      <column caption='T2 Champ4 Sum2' datatype='integer' name='[t2_champ4_sum2]' role='measure' type='quantitative' />
+      <column caption='T2 Champ4Id' datatype='integer' name='[t2_champ4id]' role='dimension' type='ordinal' />
+      <column caption='T2 Champ5 Sum1' datatype='integer' name='[t2_champ5_sum1]' role='measure' type='quantitative' />
+      <column caption='T2 Champ5 Sum2' datatype='integer' name='[t2_champ5_sum2]' role='measure' type='quantitative' />
+      <column caption='T2 Champ5Id' datatype='integer' name='[t2_champ5id]' role='dimension' type='ordinal' />
+      <column caption='t2 dragonKills' datatype='integer' name='[t2_dragonKills]' role='measure' type='quantitative' />
+      <column caption='t2 inhibitorKills' datatype='integer' name='[t2_inhibitorKills]' role='measure' type='quantitative' />
+      <column caption='t2 riftHeraldKills' datatype='integer' name='[t2_riftHeraldKills]' role='measure' type='quantitative' />
+      <column caption='t2 towerKills' datatype='integer' name='[t2_towerKills]' role='measure' type='quantitative' />
+      <column caption='Winner' datatype='integer' name='[winner]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Switzerland&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='games.csv' id='games.csv_54F9E7C8C89747B6973D390D946DE38E'>
+            <properties context=''>
+              <relation connection='textscan.1mumcxc1yz1zws13gm377048h1qe' name='games.csv' table='[games#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='gameId' ordinal='0' />
+                  <column datatype='integer' name='creationTime' ordinal='1' />
+                  <column datatype='integer' name='gameDuration' ordinal='2' />
+                  <column datatype='integer' name='seasonId' ordinal='3' />
+                  <column datatype='integer' name='winner' ordinal='4' />
+                  <column datatype='integer' name='firstBlood' ordinal='5' />
+                  <column datatype='integer' name='firstTower' ordinal='6' />
+                  <column datatype='integer' name='firstInhibitor' ordinal='7' />
+                  <column datatype='integer' name='firstBaron' ordinal='8' />
+                  <column datatype='integer' name='firstDragon' ordinal='9' />
+                  <column datatype='integer' name='firstRiftHerald' ordinal='10' />
+                  <column datatype='integer' name='t1_champ1id' ordinal='11' />
+                  <column datatype='integer' name='t1_champ1_sum1' ordinal='12' />
+                  <column datatype='integer' name='t1_champ1_sum2' ordinal='13' />
+                  <column datatype='integer' name='t1_champ2id' ordinal='14' />
+                  <column datatype='integer' name='t1_champ2_sum1' ordinal='15' />
+                  <column datatype='integer' name='t1_champ2_sum2' ordinal='16' />
+                  <column datatype='integer' name='t1_champ3id' ordinal='17' />
+                  <column datatype='integer' name='t1_champ3_sum1' ordinal='18' />
+                  <column datatype='integer' name='t1_champ3_sum2' ordinal='19' />
+                  <column datatype='integer' name='t1_champ4id' ordinal='20' />
+                  <column datatype='integer' name='t1_champ4_sum1' ordinal='21' />
+                  <column datatype='integer' name='t1_champ4_sum2' ordinal='22' />
+                  <column datatype='integer' name='t1_champ5id' ordinal='23' />
+                  <column datatype='integer' name='t1_champ5_sum1' ordinal='24' />
+                  <column datatype='integer' name='t1_champ5_sum2' ordinal='25' />
+                  <column datatype='integer' name='t1_towerKills' ordinal='26' />
+                  <column datatype='integer' name='t1_inhibitorKills' ordinal='27' />
+                  <column datatype='integer' name='t1_baronKills' ordinal='28' />
+                  <column datatype='integer' name='t1_dragonKills' ordinal='29' />
+                  <column datatype='integer' name='t1_riftHeraldKills' ordinal='30' />
+                  <column datatype='integer' name='t1_ban1' ordinal='31' />
+                  <column datatype='integer' name='t1_ban2' ordinal='32' />
+                  <column datatype='integer' name='t1_ban3' ordinal='33' />
+                  <column datatype='integer' name='t1_ban4' ordinal='34' />
+                  <column datatype='integer' name='t1_ban5' ordinal='35' />
+                  <column datatype='integer' name='t2_champ1id' ordinal='36' />
+                  <column datatype='integer' name='t2_champ1_sum1' ordinal='37' />
+                  <column datatype='integer' name='t2_champ1_sum2' ordinal='38' />
+                  <column datatype='integer' name='t2_champ2id' ordinal='39' />
+                  <column datatype='integer' name='t2_champ2_sum1' ordinal='40' />
+                  <column datatype='integer' name='t2_champ2_sum2' ordinal='41' />
+                  <column datatype='integer' name='t2_champ3id' ordinal='42' />
+                  <column datatype='integer' name='t2_champ3_sum1' ordinal='43' />
+                  <column datatype='integer' name='t2_champ3_sum2' ordinal='44' />
+                  <column datatype='integer' name='t2_champ4id' ordinal='45' />
+                  <column datatype='integer' name='t2_champ4_sum1' ordinal='46' />
+                  <column datatype='integer' name='t2_champ4_sum2' ordinal='47' />
+                  <column datatype='integer' name='t2_champ5id' ordinal='48' />
+                  <column datatype='integer' name='t2_champ5_sum1' ordinal='49' />
+                  <column datatype='integer' name='t2_champ5_sum2' ordinal='50' />
+                  <column datatype='integer' name='t2_towerKills' ordinal='51' />
+                  <column datatype='integer' name='t2_inhibitorKills' ordinal='52' />
+                  <column datatype='integer' name='t2_baronKills' ordinal='53' />
+                  <column datatype='integer' name='t2_dragonKills' ordinal='54' />
+                  <column datatype='integer' name='t2_riftHeraldKills' ordinal='55' />
+                  <column datatype='integer' name='t2_ban1' ordinal='56' />
+                  <column datatype='integer' name='t2_ban2' ordinal='57' />
+                  <column datatype='integer' name='t2_ban3' ordinal='58' />
+                  <column datatype='integer' name='t2_ban4' ordinal='59' />
+                  <column datatype='integer' name='t2_ban5' ordinal='60' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='games' name='federated.1esjc5z0kb7sis1buuyqt10qvbi7' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1esjc5z0kb7sis1buuyqt10qvbi7'>
+            <_.fcp.ObjectModelTableType.false...column caption='games.csv' datatype='integer' name='[__tableau_internal_object_id__].[games.csv_54F9E7C8C89747B6973D390D946DE38E]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[games.csv_54F9E7C8C89747B6973D390D946DE38E]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:games.csv_54F9E7C8C89747B6973D390D946DE38E:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='games.csv' datatype='table' name='[__tableau_internal_object_id__].[games.csv_54F9E7C8C89747B6973D390D946DE38E]' role='measure' type='quantitative' />
+            <column-instance column='[t1_champ1id]' derivation='None' name='[none:t1_champ1id:ok]' pivot='key' type='ordinal' />
+            <column caption='T1 Champ1Id' datatype='integer' name='[t1_champ1id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1esjc5z0kb7sis1buuyqt10qvbi7].[none:t1_champ1id:ok]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1esjc5z0kb7sis1buuyqt10qvbi7].[__tableau_internal_object_id__].[cnt:games.csv_54F9E7C8C89747B6973D390D946DE38E:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1esjc5z0kb7sis1buuyqt10qvbi7].[__tableau_internal_object_id__].[cnt:games.csv_54F9E7C8C89747B6973D390D946DE38E:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1esjc5z0kb7sis1buuyqt10qvbi7].[none:t1_champ1id:ok]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{4C1F7358-1076-44BC-A843-B6FF2AAF7395}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A9E05FE9-B5E5-460D-A454-65999F6F454C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='144'>
+      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
+      A9D5hwp9mdMtAAAAAElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
